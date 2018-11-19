@@ -1,0 +1,17 @@
+{
+  "name": "parcel-scope-hoisting-bug",
+  "version": "1.0.0",
+  "main": "dist/index-a.js",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build index-*.ts --experimental-scope-hoisting --no-cache",
+    "build-a": "parcel build index-a.ts --experimental-scope-hoisting --no-cache",
+    "build-b": "parcel build index-b.ts --experimental-scope-hoisting --no-cache"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3",
+    "parcel-plugin-clean-dist": "^0.0.6",
+    "typescript": "^3.1.6"
+  }
+}
